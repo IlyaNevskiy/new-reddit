@@ -1,0 +1,5 @@
+.commentsList{
+    padding: 30px 0;
+    border-bottom: 2px solid var(--greyEC);
+    border-top: 2px solid var(--greyEC);
+}

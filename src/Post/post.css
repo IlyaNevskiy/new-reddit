@@ -1,0 +1,66 @@
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 3.5vh;
+    transform: translateX(-50%);
+    z-index: 1000;
+    overflow-x: hidden;
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    height: 93vh;
+    background-color: var(--white);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--greyc4);
+    border-radius: 5px;
+    height: 200px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background: var(--grey66);
+    border-radius: 5px;
+}
+
+.modal > h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.closeBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width:20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (min-width: 1024px){
+    .modal{
+        top: 5vh;
+        width: 700px;
+        padding: 40px;
+        height: 93vh;
+    }
+    
+    .closeBtn{
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .closeBtn:hover{
+        border-radius: 100%;
+        background-color: var(--greyC4);
+    }
+}
+
+

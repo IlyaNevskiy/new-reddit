@@ -1,0 +1,45 @@
+.cardsList{
+    margin-bottom: 20px;
+}
+
+.btnWrapper{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.loadbtn{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--orange);
+    border-radius: 30px;
+    
+}
+
+.loadbtnTitle{
+    margin-left: 16px;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+@media all and (min-width: 1024px){
+    .cardsList{
+        padding: 30px 0;
+    }
+
+    .loadbtn{
+        border-radius: 40px;
+    }
+
+    .loadbtnTitle{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .loadbtn > svg{
+       width: 60px;
+       height: 60px;
+    }
+}

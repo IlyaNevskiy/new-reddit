@@ -1,0 +1,60 @@
+ .menuItemsList{
+     padding: 0 20px;
+ }
+
+ .menuItem{
+     padding: 12px 0;
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+ }
+
+ .menuItem > span {
+     margin-right: 7px;
+ }
+
+ .menuItemVisible{
+     display: none;
+ }
+ 
+ .divider{
+     height: 1px;
+     width: 100%;
+     background-color: var(--greyEC);
+ }
+
+ .dividerNotVisible{
+     display: none;
+ }
+
+ @media all and (min-width: 1024px){
+
+    .menuItemsList{
+        padding: 0 25px;
+    }
+
+    .dividerNotVisible{
+        display: block;
+    }
+
+    .menuItemVisible{
+        display: flex;
+    }
+
+    .menuItem > svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .menuItem:hover{
+        cursor: pointer;
+    }
+
+    .menuItem:hover > span {
+        color: var(--orange); 
+    }
+
+    .menuItem:hover > span > svg{
+        fill: var(--orange);
+    }
+ }

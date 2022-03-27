@@ -1,0 +1,23 @@
+.formAnswer{
+    margin-top: 10px;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    color: var(--grey99);
+    border: 1px solid var(--grey99);
+    resize: none;
+}
+
+
+.button{
+    display: flex;
+    margin-left: auto;
+    padding: 7px 13px;
+    background-color: var(--greyC4);
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 14px;
+}

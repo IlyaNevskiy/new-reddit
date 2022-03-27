@@ -1,0 +1,86 @@
+.s14 > svg {
+    width: 14px;
+    height: 14px;
+}
+
+.s14{
+    width: 14px;
+    height: 14px; 
+}
+
+.s16 > svg {
+    width: 16px;
+    height: 16px;
+}
+
+.s16{
+    width: 16px;
+    height: 16px; 
+}
+
+.s30 > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.s30{
+    width: 30px;
+    height: 30px; 
+}
+
+.s20 > svg {
+    width: 20px;
+    height: 20px;
+}
+
+.s20{
+    width: 20px;
+    height: 20px; 
+}
+
+.icon{
+    margin-right: 7px;
+}
+
+
+@media all and (min-width: 1024px){
+    .dt14 > svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .dt14{
+        width: 14px;
+        height: 14px;
+    }
+    
+    .dt16 > svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dt16{
+        width: 16px;
+        height: 16px;
+    }
+
+    .dt30 > svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dt30{
+        width: 30px;
+        height: 16px; 
+    }
+    
+    .dt20 > svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dt20{
+        width: 20px;
+        height: 20px; 
+    }
+}

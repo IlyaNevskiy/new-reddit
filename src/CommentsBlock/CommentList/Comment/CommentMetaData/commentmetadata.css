@@ -1,0 +1,25 @@
+.metaData{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+
+.userLink{
+    color: var(--orange);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.userLink:hover{
+    text-decoration: underline;
+}
+
+.userLigue{
+   font-size: 12px;
+    font-weight: 14px;
+    color: var(--black);
+    padding: 3px 5px;
+    background-color: var(--greyC4);
+}

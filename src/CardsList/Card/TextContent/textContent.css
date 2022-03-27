@@ -1,0 +1,21 @@
+.textContent{
+    padding: 22px 20px 13px;
+}
+
+
+@media all and (min-width: 1024px){
+    .textContent{ 
+        display: flex;
+        padding: 0;
+        margin-left: 30px;
+        order: 2;
+        flex-direction: column-reverse;
+        max-width: 600px;
+    }
+}
+
+@media all and (min-width:1540px){
+    .textContent{
+        max-width: 672px;
+    }
+}
