@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './commentmetadata.css';
-import { EColor, Text } from '../../../../Text';
+import { EColor, Text } from '../../../../../Text';
 
 interface ICommentMetaDataProps{
 name: string;

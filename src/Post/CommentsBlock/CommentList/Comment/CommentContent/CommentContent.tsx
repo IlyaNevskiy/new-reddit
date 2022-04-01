@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './commentcontent.css';
-import { Text } from '../../../../Text';
+import { Text } from '../../../../../Text';
 
 export function CommentContent() {
   return (

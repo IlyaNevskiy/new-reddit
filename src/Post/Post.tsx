@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import styles from './post.css';
 import { Text } from '../Text'
-import { CommentsBlock } from '../CommentsBlock';
+import { CommentsBlock } from './CommentsBlock';
 import { CommentFormContainer } from '../CommentFormContainer/CommentFormContainer';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';

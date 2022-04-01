@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 export function useToken(str:string){
     if(str.includes('auth')){
        return (

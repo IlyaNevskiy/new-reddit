@@ -3,9 +3,9 @@ import { Dropdown } from '../../../Dropdown';
 import { MenuIcon } from '../../../icon';
 import { Menuitemslist } from './Menuitemslist';
 import { Text, EColor } from '../../../Text';
-import styles from './menuskillbox.css';
+import styles from './menu.css';
 
-export function Menuskillbox() {
+export function Menu() {
   return (
     <div className={styles.menu}>
       

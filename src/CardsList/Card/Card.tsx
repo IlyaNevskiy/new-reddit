@@ -1,9 +1,7 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Post } from '../../Post';
 import styles from './card.css';
 import { Controls } from './Controls';
-import { Menuskillbox } from './Menuskillbox';
+import { Menu } from './Menu';
 import { Preview } from './Preview';
 import { TextContent } from './TextContent';
 
@@ -21,7 +19,7 @@ export function Card({ title, score, author, created_utc, src, idForBtn } : Prop
     <li className={styles.card}>
       <TextContent title={title} author= {author} created_utc={created_utc} id={idForBtn}  />
       <Preview src={src}/> 
-      <Menuskillbox />
+      <Menu />
       <Controls scoreprops={score} idForBtn= {idForBtn} />
     </li>
   );
