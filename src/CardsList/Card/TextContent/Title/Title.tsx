@@ -4,13 +4,13 @@ import styles from './title.css';
 
 interface Props{
   title:string;
-  id: string
+  postId: string
 }
 
-export function Title({title, id}: Props) {
+export function Title({title, postId}: Props) {
   return (
     <h2 className={styles.title}>
-    <Link to={id} className={styles.postLink}>
+    <Link to={postId} className={styles.postLink}>
     {title}
     </Link>
 

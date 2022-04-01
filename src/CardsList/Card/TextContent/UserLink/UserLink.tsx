@@ -14,7 +14,7 @@ export function UserLink({ author, created_utc }: Props) {
     const differ:number = Math.round((now-created_utc)/3600);
     
     if(differ>24){
-
+      setDate('1 день назад');
     }
     else{   
        switch(differ){
@@ -45,6 +45,7 @@ export function UserLink({ author, created_utc }: Props) {
 useEffect(()=>{
   dateDetection();
 },[])
+
 return (
 <div className={styles.metaData}>
             <div className={styles.userLink}>
@@ -57,7 +58,8 @@ return (
             </div>
             <span className={styles.createdAt}>
               <span className={styles.publishedLabel}>опубликовано</span>
-              {date}</span>
+              {date}
+            </span>
           </div>
   );
 }

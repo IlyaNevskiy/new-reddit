@@ -7,14 +7,14 @@ interface Props{
   title:string;
   author:string;
   created_utc:number;
-  id:string;
+  postId:string;
 }
 
-export function TextContent({title, author, created_utc,id}: Props) {
+export function TextContent({title, author, created_utc, postId}: Props) {
   return (
-<div className={styles.textContent}>
+      <div className={styles.textContent}>
           <UserLink author={author} created_utc={created_utc} />
-          <Title title={title} id={id} />
+          <Title title={title} postId={postId} />
         </div>
   );
 }

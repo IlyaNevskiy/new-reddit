@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import styles from './controls.css';
 
-interface Props{
+interface IControlsProps{
   scoreprops:number;
-  idForBtn: string
+  postId: string;
 }
 
-export function Controls({ scoreprops, idForBtn }: Props) {
-idForBtn+='--karma';
+export function Controls({ scoreprops, postId }: IControlsProps) {
+postId+='--karma';
 const [score, setScore]= useState(scoreprops);
 const [up, setUp]= useState(false);
 const [down, setDown]= useState(false);
-const karmaValue=document.getElementById(idForBtn);
+const karmaValue=document.getElementById(postId);
 
   return (
     <div className={styles.controls}>
@@ -34,7 +34,7 @@ const karmaValue=document.getElementById(idForBtn);
           <path d="M9.5 0L0 10H19L9.5 0Z" fill="#C4C4C4"/>
         </svg>
       </button>
-      <span id={idForBtn} className={styles.karmaValue}>{score}</span>
+      <span id={postId} className={styles.karmaValue}>{score}</span>
       <button className={styles.down} onClick={()=>{
         if(up===false && down===false){
           setScore(score-1);

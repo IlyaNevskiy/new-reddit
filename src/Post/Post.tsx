@@ -73,9 +73,8 @@ export function Post( ) {
         )}
         
       </div>
-
-      {/* <CommentFormContainer /> 
-
+     
+      {/* <CommentFormContainer />
       <CommentsBlock /> */}
     </div>
   ), node);

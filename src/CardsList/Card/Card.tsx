@@ -11,16 +11,16 @@ interface Props{
   author: string;
   created_utc: number;
   src: string[];
-  idForBtn: string
+  postId: string
 }
 
-export function Card({ title, score, author, created_utc, src, idForBtn } : Props) {
+export function Card({ title, score, author, created_utc, src, postId } : Props) {
   return (
     <li className={styles.card}>
-      <TextContent title={title} author= {author} created_utc={created_utc} id={idForBtn}  />
+      <TextContent title={title} author= {author} created_utc={created_utc} postId={postId}  />
       <Preview src={src}/> 
-      <Menu />
-      <Controls scoreprops={score} idForBtn= {idForBtn} />
+      <Menu postId={postId}/>
+      <Controls scoreprops={score} postId= {postId} />
     </li>
   );
 }

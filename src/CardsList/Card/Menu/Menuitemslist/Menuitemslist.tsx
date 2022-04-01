@@ -10,7 +10,7 @@ postId: string;
 
 export function Menuitemslist( {postId}: IMenuitemslistProps) {
   return (
-<ul className={styles.menuItemsList}>
+<ul className={styles.menuItemsList} id={postId}>
 
   <li className={classNames(styles.menuItem, styles.menuItemVisible)}>
     <Icon name={EIcon.comment} size={14} desktopTabletSize={16} />

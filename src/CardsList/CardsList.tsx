@@ -79,7 +79,7 @@ return (
       {posts.map(post=>(
         <Card 
         key={post.data.id}
-        idForBtn={post.data.id}
+        postId={post.data.id}
         title={post.data.title}
         score={post.data.score}
         author={post.data.author}
